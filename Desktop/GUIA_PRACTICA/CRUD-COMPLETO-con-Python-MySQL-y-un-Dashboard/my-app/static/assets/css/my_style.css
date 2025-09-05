@@ -11,7 +11,7 @@ body {
 
 /*Inicio del loader */
 #loader-out {
-  background-color: #cecece;
+  background-color: #d73f3f;
   opacity: 0.5;
   position: fixed;
   width: 100%;
@@ -25,7 +25,7 @@ body {
 #loader-container {
   width: 150px;
   height: 150px;
-  color: white;
+  color: rgb(104, 223, 227);
   margin: 0 auto;
   position: absolute;
   top: 50%;
@@ -39,20 +39,23 @@ body {
 }
 
 #loading-text {
-  color: #222;
+  color: #e4c9c4;
   font-size: 1.5em;
+  font-weight: 700;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
+  user-select: none; /* evita que el texto se seleccione */
+  white-space: nowrap; /* evita que el texto se divida en varias líneas */
+  pointer-events: none; /* para que no interfiera con clics */
 }
 @-webkit-keyframes borderScale {
   0% {
     border: 5px solid white;
   }
   50% {
-    border: 25px solid #08b324;
+    border: 25px solid #e55d83;
   }
   100% {
     border: 5px solid white;
@@ -64,7 +67,7 @@ body {
     border: 5px solid white;
   }
   50% {
-    border: 25px solid #08b324;
+    border: 25px solid #6e0611;
   }
   100% {
     border: 5px solid white;
@@ -92,7 +95,7 @@ body {
 }
 
 .bx-menu {
-  background-color: #08b324 !important;
+  background-color: #2dd07f !important;
   color: #fff;
   padding: 10px 10px;
   border-radius: 50%;
@@ -128,8 +131,8 @@ tbody tr:hover {
 
 .borderCheckbox {
   cursor: pointer;
-  border-color: #08b324;
-  box-shadow: 0 2px 4px 0 rgba(10, 207, 10, 0.4);
+  border-color: #327dd3;
+  box-shadow: 0 2px 4px 0 rgba(221, 44, 85, 0.4);
 }
 .pagination {
   justify-content: center;
@@ -148,7 +151,7 @@ tbody tr:hover {
 }
 
 .pesos {
-  background-color: #08b324;
+  background-color: #e845c7;
   color: #fff;
   padding: 2px;
   border-radius: 10%;
@@ -160,10 +163,10 @@ tbody tr:hover {
 }
 
 .input_vacio {
-  border-color: #dc3545 !important;
+  border-color: #e53942 !important;
 }
 .input_lleno {
-  border-color: #198754 !important;
+  border-color: #4990f3 !important;
 }
 
 .menu-vertical .menu-inner > .menu-item .menu-link {
@@ -192,7 +195,7 @@ tbody tr:hover {
 }
 
 .alert-success {
-  background-color: #48c808 !important;
+  background-color: #2f71c8 !important;/*color de alerta*/
   color: #fff !important;
 }
 
@@ -200,7 +203,7 @@ tbody tr:hover {
   text-transform: uppercase !important;
 }
 .btn-primary {
-  background-color: #09c046 !important;
+  background-color: #4f65e2da !important;/*boton de inicio de sesion*/
   border: none !important;
 }
 .btn-close {
@@ -227,7 +230,7 @@ tbody tr:hover {
 
 #informe_general:hover {
   cursor: pointer;
-  border-bottom: dotted 1px #08b324;
+  border-bottom: dotted 1px #3dd8e1;
 }
 
 #search {
