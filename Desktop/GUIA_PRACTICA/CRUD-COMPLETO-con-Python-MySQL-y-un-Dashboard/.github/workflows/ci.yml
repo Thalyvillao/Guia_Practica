@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI Cambios
 
 on:
   push:
@@ -28,3 +28,5 @@ jobs:
       run: |
         echo "Ejecutando pruebas..."
         pytest || echo "No hay pruebas definidas, continuando..."
+
+        
